@@ -340,7 +340,7 @@ display: none !important;
         <div id="w-node-_2bf0adcd-b6b5-f3a9-8935-0b70abf062ca-abf062c7" class="footer-column">
           <a href="index.html" aria-label="Logo" aria-current="page" class="logo w-nav-brand w--current"><img src="images/ph-logo-white-small.png" loading="lazy" width="99" alt=""></a>
         </div>
-        <div id="w-node-_9cc344b3-16a7-8f77-e0aa-0982c60e0aa6-abf062c7" class="text-block">©2025 Patrick Hubert<a href="https://www.bryntaylor.co.uk/" target="_blank" class="copyright-link"><span class="spacer _16"> </span></a>
+        <div id="w-node-_9cc344b3-16a7-8f77-e0aa-0982c60e0aa6-abf062c7" class="text-block">©<span id="current-year"></span> Patrick Hubert<a href="https://www.bryntaylor.co.uk/" target="_blank" class="copyright-link"><span class="spacer _16"> </span></a>
         </div>
       </div>
     </div>
@@ -363,6 +363,9 @@ display: none !important;
   
       items.forEach(item => grid.appendChild(item));
     });
+  </script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
